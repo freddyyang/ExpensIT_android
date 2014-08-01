@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Expensit</name>
+=======
+	<name>ExpensIT</name>
+>>>>>>> 3ab1257636e21099d0e6d668e6f4212e82280fd6
 	<comment></comment>
 	<projects>
 	</projects>
