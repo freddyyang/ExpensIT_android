@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dip"
+                android:text="Expense Type"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edittext_acctitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:width="200dip" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dip"
+                android:text="Amount"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Fee"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:numeric="decimal"
+                android:width="160dip" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Dollars)"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dip"
+                android:fadingEdge="horizontal"
+                android:height="24dip"
+                android:text="Date and Time" >
+            </TextView>
+        </LinearLayout>
+       <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dip"
+                android:text="Personal/Family"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Spinner01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dip" >
+            </Spinner>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/vdate"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:width="120dip" >
+
+            </TextView>
+
+            <Button
+                android:id="@+id/BtnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="30dip"
+                android:text="+"
+                android:textSize="24dip"
+                android:textStyle="bold"
+                 >
+            </Button>
+
+        </LinearLayout>
+            
+                  <LinearLayout
+            android:id="@+id/LinearLayout05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/vtime"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:width="80dip" >
+
+            </TextView>
+
+            <Button
+                android:id="@+id/BtnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_below="@+id/BtnDate"
+                android:textSize="24dip"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="24dip"
+            android:text="Note" />
+
+        <EditText
+            android:id="@+id/EditTextDESC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lines="4" >
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout08"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/BtnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textSize="24dip"
+                android:textStyle="bold"
+                android:width="160dip" >
+            </Button>
+
+            <Button
+                android:id="@+id/BtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="24dip"
+                android:textStyle="bold"
+                android:width="160dip" >
+            </Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+</ScrollView>
