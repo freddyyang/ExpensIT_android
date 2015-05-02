@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<<<<<<< HEAD
+    <string name="app_name"> ExpensIT</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome"> save more spend less</string>
+	<string name="description"> Picture description</string>
+=======
+    <string name="app_name">ExpensIT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+>>>>>>> 3ab1257636e21099d0e6d668e6f4212e82280fd6
+</resources>

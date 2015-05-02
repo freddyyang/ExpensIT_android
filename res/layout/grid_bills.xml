@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layouthead"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffCded8b"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keepScreenOn="true" >
+
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:width="20dip" />
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Expense"
+                android:textStyle="bold"
+                android:width="60dip" />
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Amount"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:width="60dip" />
+
+            <TextView
+                android:id="@+id/item4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Date"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:width="80dip" />
+
+            <TextView
+                android:id="@+id/item5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Note"
+                android:textSize="14dip"
+                android:textStyle="bold"
+                android:width="100dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minHeight="372dip" >
+
+            <ListView
+                android:id="@+android:id/listview01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutfoot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffCded8b" >
+
+            <TextView
+                android:id="@+id/totalitem"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Monthly Income:2009.33 Expense:3000.87 Net:-1000.9"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
