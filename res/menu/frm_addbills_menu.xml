@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_bill"
+          android:icon="@drawable/editbills"
+          android:title="@string/str_bill"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_quit"
+          android:icon="@drawable/quit"
+          android:title="@string/str_quit" />
+    <item android:id="@+id/menu_about"
+          android:title="@string/str_about" />
+</menu>

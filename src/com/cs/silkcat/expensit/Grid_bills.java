@@ -3,7 +3,8 @@ package com.cs.silkcat.expensit;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-import com.cs.silkcat.expensit.R;
+import com.cs.silkcat.expensit.Frm_Editacctitem.MyExpandableListAdapter;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -23,12 +24,15 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.AbsoluteLayout;
+import android.util.Log;
 
 public class Grid_bills extends Activity implements OnItemLongClickListener {
 	BilldbHelper billdb;
 	View sv;
 	EditText edit;
-	RelativeLayout alayout;
+	@SuppressWarnings("deprecation")
+	AbsoluteLayout alayout;
 	int a = 10, b = 10;
 	GridView grd;
 

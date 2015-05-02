@@ -11,16 +11,16 @@ import android.util.Log;
  */
 public class BilldbHelper {
 
-    private static final String TAG = "Cola_BilldbHelper";
+    private static final String TAG = "expensit_BilldbHelper";
 
-    private static final String DATABASE_NAME = "cola.db";
+    private static final String DATABASE_NAME = "expensit.db";
     
     SQLiteDatabase db;
     Context context;
     
     BilldbHelper(Context _context) {
     	context=_context;
-    	db=context.openOrCreateDatabase(DATABASE_NAME, 0, null); 
+    	db=context.openOrCreateDatabase(DATABASE_NAME, 0, null); //create the database
     	Log.v(TAG,"db path="+db.getPath());
     }
     

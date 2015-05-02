@@ -21,7 +21,6 @@ public class Dialog_edit extends AlertDialog implements OnClickListener {
 		void onDateSet(String text);
 	}
 
-	@SuppressWarnings("deprecation")
 	protected Dialog_edit(Context context, String title, String value,
 			OnDateSetListener Callback) {
 		super(context);

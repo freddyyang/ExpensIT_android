@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cs.silkcat.expensit"
     android:versionCode="1"
-<<<<<<< HEAD
     android:versionName="1.0.0" >
 
     <uses-sdk
@@ -17,21 +16,6 @@
         android:label="@string/app_name" >
         <activity
             android:name=".MainActivity"
-=======
-    android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="19" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.cs.silkcat.expensit.MainActivity"
->>>>>>> 3ab1257636e21099d0e6d668e6f4212e82280fd6
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name="Frm_Addbills" >
         </activity>
         <activity android:name="Frm_Editacctitem" >
@@ -57,8 +40,3 @@
      <uses-permission android:name="android.permission.READ_CONTACTS" />
 
 </manifest>
-=======
-    </application>
-
-</manifest>
->>>>>>> 3ab1257636e21099d0e6d668e6f4212e82280fd6

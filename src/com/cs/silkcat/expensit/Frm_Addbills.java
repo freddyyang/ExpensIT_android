@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -51,7 +52,7 @@ public class Frm_Addbills extends Activity implements OnClickListener {
 
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-		setTitle("ExpensIT-Add Expense");		
+		setTitle("ExpensIT");		
 		setContentView(R.layout.frm_addbills);
 		
 		edittext_acctitem = (EditText)findViewById(R.id.edittext_acctitem);		
@@ -86,12 +87,44 @@ public class Frm_Addbills extends Activity implements OnClickListener {
         s1.setAdapter(mAdapter);
 	}
 
+	
+	//setIcon on Option menu not working for > 4.0 Android versions 
+	//	public boolean onCreateOptionsMenu(Menu menu) {
+	//		super.onCreateOptionsMenu(menu);
+	//		menu.add(0,1,0,"Expense").setIcon(com.cs.silkcat.expensit.R.drawable.editbills);
+	//		menu.add(0,2,0,"Exit").setIcon(R.drawable.quit);
+	//		menu.add(0,3,0,"About");	
+	//		return true;
+	//	}
+	
+	// Thus changed to following method of using menu for 4.0 version.
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		super.onCreateOptionsMenu(menu);
-		menu.add(0, 1, 0, "Expense").setIcon(R.drawable.editbills);
-		menu.add(0, 2, 0, "Exit").setIcon(R.drawable.quit);
-		menu.add(0, 3, 0, "About");	
-		return true;
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.frm_addbills_menu, menu);
+	    return true;
+	}
+
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.menu_bill:
+			Intent intent = new Intent();
+			//intent.setClass(Frm_Addbills.this, Grid_bills.class);
+			intent.setClassName(Frm_Addbills.this,"com.cs.silkcat.expensit.Grid_bills");;
+			startActivity(intent);
+			return true;
+
+		case R.id.menu_quit:
+			QuitApp();
+			return true;
+		case R.id.menu_about:
+			  new AlertDialog.Builder(this) 
+			    .setTitle("ExpensIT") 
+			    .setMessage("freddyyang1124@gmail.com") 
+			    .show();
+			return true;
+		}
+		return false;
 	}
 
 	@SuppressWarnings("deprecation")
@@ -116,29 +149,6 @@ public class Frm_Addbills extends Activity implements OnClickListener {
 		}
 		
 	}
-
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case 1:
-			Intent intent = new Intent();
-			//intent.setClass(Frm_Addbills.this, Grid_bills.class);
-			intent.setClassName(Frm_Addbills.this,"com.cs.silkcat.expensit.Grid_bills");;
-			startActivity(intent);
-			return true;
-
-		case 2:
-			QuitApp();
-			return true;
-		case 3:
-			  new AlertDialog.Builder(this) 
-			    .setTitle("ExpensIT") 
-			    .setMessage("freddyyang1124@gmail.com") 
-			    .show();
-			return true;
-		}
-		return false;
-	}
-
     
     
 	public void QuitApp() {
